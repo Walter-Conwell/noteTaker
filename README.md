@@ -24,7 +24,7 @@ Create and save notes with this note-taker.
 
 ## Contributors
 
-Adrian Franks, GitHub -> ACFcoding
+
 Jacob Carver
 
 ## Questions
