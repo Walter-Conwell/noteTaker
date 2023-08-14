@@ -1,3 +1,4 @@
+// declarations
 const express = require("express");
 const path = require("path");
 const notes = require("./db/db.json");
@@ -24,6 +25,7 @@ app.get("/notes", (req, res) =>
 
 app.get("/api/notes", (req, res) => res.json(notes));
 
+// POST Route
 app.post("/api/notes", (req, res) => {
   req.body.id = notes.length + 1;
   notes.push(req.body);
@@ -31,6 +33,7 @@ app.post("/api/notes", (req, res) => {
   res.json(notes);
 });
 
+// listening port for user
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
